@@ -10,7 +10,15 @@
     <script>
         $(document).ready(function () {
 
-
+            $('#add_class').click(function () {
+                $('#add_red').addClass('red-background');
+            });
+            $('#slide-toggle').click(function () {
+                $('img.hidden').slideToggle('slow');
+            });
+            $('#append').click(function () {
+                $('#append-p').append('<p>Pie chocolate bar fruitcake donut jelly-o chocolate bar gummi bears. Apple pie candy pie macaroon dessert jelly. Powder lollipop jelly-o. Muffin dessert tart jelly. Topping chocolate cake croissant brownie lollipop donut sweet wafer. Tart danish icing. Carrot cake sugar plum croissant apple pie halvah. Halvah cookie sweet roll pudding. Cake jelly chocolate cake caramels donut. Candy bear claw cake soufflé tiramisu biscuit cheesecake muffin danish. Sweet lemon drops gummi bears jelly-o caramels chocolate bear claw ice cream sweet. Lollipop muffin biscuit marzipan marshmallow. Pudding pastry powder.</p>');
+            });
 
         });
     </script>
@@ -22,31 +30,32 @@
         <div class="jumbotron">
             <div class="row align-items-center">
                 <div class="col-sm-3 center">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Add Class</a>
+                    <button type="button" class="btn btn-primary btn-lg" id="add_class">Add Class</button>
                 </div>
                 <div class="col-sm-9">
                     <h1 class="display-4">Add Class</h1>
-                    <p class="lead">Click the button to add class 'red' to this paragraph.</p>
+                    <p class="lead" id="add_red">Click the button to add class 'red' to this paragraph.</p>
                 </div>
             </div>
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-sm-3 center">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Slide-Toggle</a>
+                    <button type="button" class="btn btn-primary btn-lg" id="slide-toggle">Slide-Toggle</button>
                 </div>
                 <div class="col-sm-9">
                     <h1 class="display-4">Slide-Toggle</h1>
                     <p class="lead">Click the button to slide-toggle a hidden image.</p>
+                    <img src="images/dancingbanana.gif" alt="dancingbanana" class="hidden">
                 </div>
             </div>
             <hr class="my-4">
             <div class="row align-items-center">
                 <div class="col-sm-3 center">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Append</a>
+                    <button type="button" class="btn btn-primary btn-lg" id="append">Append</button>
                 </div>
                 <div class="col-sm-9">
                     <h1 class="display-4">Append</h1>
-                    <p class="lead">Click the button to append a new paragraph!</p>
+                    <p class="lead" id="append-p">Click the button to append a new paragraph!</p>
                 </div>
             </div>
             <hr class="my-4">
