@@ -19,6 +19,24 @@
             $('#append').click(function () {
                 $('#append-p').append('<p>Pie chocolate bar fruitcake donut jelly-o chocolate bar gummi bears. Apple pie candy pie macaroon dessert jelly. Powder lollipop jelly-o. Muffin dessert tart jelly. Topping chocolate cake croissant brownie lollipop donut sweet wafer. Tart danish icing. Carrot cake sugar plum croissant apple pie halvah. Halvah cookie sweet roll pudding. Cake jelly chocolate cake caramels donut. Candy bear claw cake soufflé tiramisu biscuit cheesecake muffin danish. Sweet lemon drops gummi bears jelly-o caramels chocolate bear claw ice cream sweet. Lollipop muffin biscuit marzipan marshmallow. Pudding pastry powder.</p>');
             });
+            $('#hide').click(function () {
+                $('#hide-p').hide('slow');
+            });
+            $('#show').click(function () {
+                $('#show-p').show('slow');
+            });
+            $('#toggle').click(function () {
+                $('#toggle-img').toggle('slow');
+            });
+            $('#slide_down').click(function () {
+                $('#slidedown-p').slideDown('slow');
+            });
+            $('#slide_up').click(function () {
+                $('#slideup-p').slideUp('slow');
+            });
+            $('#fade_in').click(function () {
+                $('.fadein-p').fadeIn('slow');
+            });
 
         });
     </script>
@@ -56,6 +74,81 @@
                 <div class="col-sm-9">
                     <h1 class="display-4">Append</h1>
                     <p class="lead" id="append-p">Click the button to append a new paragraph!</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-sm-3 center">
+                    <button type="button" class="btn btn-primary btn-lg" id="hide">Hide</button>
+                </div>
+                <div class="col-sm-9">
+                    <h1 class="display-4">Hide</h1>
+                    <p class="lead" id="hide-p">Click the button to hide this paragraph.</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-sm-3 center">
+                    <button type="button" class="btn btn-primary btn-lg" id="show">Show</button>
+                </div>
+                <div class="col-sm-9">
+                    <h1 class="display-4">Show</h1>
+                    <p class="lead">Click the button to show a hidden paragraph.</p>
+                    <p class="hidden" id="show-p">Sweet roll macaroon donut soufflé danish icing oat cake sesame snaps
+                        fruitcake. Candy canes gingerbread soufflé dessert donut icing cotton candy marzipan oat cake.
+                        Wafer jelly toffee. Jelly beans oat cake donut wafer tiramisu gummies soufflé toffee. Tart
+                        fruitcake sweet tootsie roll liquorice. Chocolate cake cheesecake brownie pie halvah oat cake
+                        jelly. Chocolate bar dragée halvah biscuit tootsie roll cupcake. Oat cake tart halvah icing
+                        chupa chups biscuit. Sweet roll cheesecake gummi bears pastry muffin pastry chupa chups.
+                        Croissant marzipan wafer tiramisu marzipan. Dessert topping cookie. Candy canes dragée brownie
+                        bonbon tart sugar plum. Bear claw sweet chocolate cake fruitcake croissant gingerbread powder.
+                        Marshmallow donut liquorice marshmallow pie brownie croissant gingerbread donut.</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-sm-3 center">
+                    <button type="button" class="btn btn-primary btn-lg" id="toggle">Toggle</button>
+                </div>
+                <div class="col-sm-5">
+                    <h1 class="display-4">Toggle</h1>
+                    <p class="lead">Click the button to toggle this image of Jake.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img id="toggle-img" src="images/jake.png" alt="Jake">
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-sm-3 center">
+                    <button type="button" class="btn btn-primary btn-lg" id="slide_down">Slide Down</button>
+                </div>
+                <div class="col-sm-9">
+                    <h1 class="display-4">Slide Down</h1>
+                    <p class="lead">Click the button to slide down a hidden paragraph.</p>
+                    <p id="slidedown-p">Lemon drops candy canes candy macaroon icing candy lollipop cotton candy. Sugar plum candy sesame snaps. Toffee jelly sweet roll oat cake jujubes. Chocolate bar marshmallow chocolate bar pudding marzipan danish chocolate cake. Candy wafer sweet roll ice cream fruitcake sweet roll macaroon. Sesame snaps gummi bears donut chupa chups tiramisu cotton candy candy canes. Croissant marshmallow fruitcake dessert liquorice jelly chupa chups wafer. Carrot cake donut chocolate bar powder. Ice cream chocolate apple pie apple pie cupcake. Bonbon pie donut. Chocolate cake cake cake danish icing jelly beans sweet roll oat cake jelly. Macaroon dessert chocolate cake sesame snaps.</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-sm-3 center">
+                    <button type="button" class="btn btn-primary btn-lg" id="slide_up">Slide Up</button>
+                </div>
+                <div class="col-sm-9">
+                    <h1 class="display-4">Slide Up</h1>
+                    <p class="lead">Click the button to slide up the below paragraph.</p>
+                    <p id="slideup-p">Lemon drops candy canes candy macaroon icing candy lollipop cotton candy. Sugar plum candy sesame snaps. Toffee jelly sweet roll oat cake jujubes. Chocolate bar marshmallow chocolate bar pudding marzipan danish chocolate cake. Candy wafer sweet roll ice cream fruitcake sweet roll macaroon. Sesame snaps gummi bears donut chupa chups tiramisu cotton candy candy canes. Croissant marshmallow fruitcake dessert liquorice jelly chupa chups wafer. Carrot cake donut chocolate bar powder. Ice cream chocolate apple pie apple pie cupcake. Bonbon pie donut. Chocolate cake cake cake danish icing jelly beans sweet roll oat cake jelly. Macaroon dessert chocolate cake sesame snaps.</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-sm-3 center">
+                    <button type="button" class="btn btn-primary btn-lg" id="fade_in">Fade In</button>
+                </div>
+                <div class="col-sm-9">
+                    <h1 class="display-4">Fade In</h1>
+                    <p class="lead">Click the button to fade in a hidden paragraph.</p>
+                    <p class="fadein-p">Lemon drops candy canes candy macaroon icing candy lollipop cotton candy. Sugar plum candy sesame snaps. Toffee jelly sweet roll oat cake jujubes. Chocolate bar marshmallow chocolate bar pudding marzipan danish chocolate cake. Candy wafer sweet roll ice cream fruitcake sweet roll macaroon. Sesame snaps gummi bears donut chupa chups tiramisu cotton candy candy canes. Croissant marshmallow fruitcake dessert liquorice jelly chupa chups wafer. Carrot cake donut chocolate bar powder. Ice cream chocolate apple pie apple pie cupcake. Bonbon pie donut. Chocolate cake cake cake danish icing jelly beans sweet roll oat cake jelly. Macaroon dessert chocolate cake sesame snaps.</p>
                 </div>
             </div>
             <hr class="my-4">

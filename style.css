@@ -26,3 +26,15 @@
 .hidden {
     display: none;
 }
+
+#toggle-img {
+    width: 200px;
+}
+
+#slidedown-p {
+    display: none;
+}
+
+.fadein-p {
+    display: none;
+}
